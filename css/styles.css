@@ -1,57 +1,67 @@
-body {
-	font-size: 25px;
-	text-align: center;
-	background-color:rgb(238, 238, 238);
-	color: rgb(44, 43, 43);
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	font-family: 'Source Sans Pro', sans-serif;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-.topo {
-	background-color: rgb(51, 51, 51);
-	color:#fff;
-	padding: 0.5em
+body {
+	line-height: 1;
 }
-.container {
-	width: 95%;
-	margin: 0 auto;
+ol, ul {
+	list-style: none;
 }
-/*Esse é o Skip que vai para o conteúdo principal da página*/
-.skip {
-	position: absolute;
-	left: -10000px;
-	top: auto;width: 1px;
-	height: 1px;
-	overflow: hidden;
+blockquote, q {
+	quotes: none;
 }
-.skip:focus {
-	position: static;
-	width: auto;
-	height: auto;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-/*Esse é o Skip que vai para o conteúdo principal da página*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/*Minhas especificações*/
+body {
+	font-family: 'Redressed', cursive;
+	font-size: 25px;
+	text-align: center;
+	background-color:rgb(247, 210, 210);
+	color: rgb(44, 43, 43);
+}
 img {
 	border-radius: 8px;
-	width: 100%;
-	max-width: 80%;
-	height: auto;
-}	
-a:focus{
-    color: rgb(44, 43, 43); 
+}
+a {
+    text-decoration: none;
+    color: blue;
 }
 a:hover{
-    color: rgb(44, 43, 43); 
+    color: red; 
 }
 a:visited {
-    color: rgb(0, 33, 116); 
+    color: lightcoral;
 }
-.cursor {cursor: pointer}
-input, button, select {padding:5px}
-
-/*Contraste*/
-.contraste {background-color:#222;color:#f2f2f2;}
-.contraste a {color:#f2f2f2;text-decoration: none;}
-.contraste a[target] {background-color:yellow;color:#333}
-.contraste button {background-color:#222;color:#f2f2f2;border-color:tomato;border-width:1px}
-.contraste input {background-color:#333;color:#f2f2f2;border-width:0px}
-.contraste input, .contraste button {border-radius:5px;font-size:12px}
